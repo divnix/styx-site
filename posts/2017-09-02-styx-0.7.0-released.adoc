@@ -86,7 +86,7 @@ $ nix-env -A styx -I nixpkgs=https://github.com/NixOS/nixpkgs-channels/archive/n
 Learn more in the +++{{ with meta; templates.tag.ilink { to = data.doc."{{ release }}" + "index.html"; content = "Styx {{ version }} Documentation"; } }}+++,
 +++{{ with meta; templates.tag.ilink { to = data.doc."{{ release }}" + "index.html#{{ release }}"; content = "release notes"; } }}+++.
 
-Contribute to Styx via https://github.com/styx-static/styx/[GitHub repository].
+Contribute to Styx via https://github.com/divnix/styx/[GitHub repository].
 
-Problems and bugs should be reported to the https://github.com/styx-static/styx/issues[issue tracker].
+Problems and bugs should be reported to the https://github.com/divnix/styx/issues[issue tracker].
 

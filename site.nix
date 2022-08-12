@@ -60,7 +60,7 @@ rec {
       pages.news
       { title = "Documentation"; path = "/documentation/index.html"; }
       pages.themesList
-      { title = "GitHub ${templates.icon.font-awesome "github"}"; url = "https://github.com/styx-static/styx/"; }
+      { title = "GitHub ${templates.icon.font-awesome "github"}"; url = "https://github.com/divnix/styx/"; }
       (pages.feed // { navbarTitle = (templates.icon.font-awesome "rss-square") + ''<span class="sr-only">RSS</span>''; })
     ];
 
@@ -150,7 +150,7 @@ rec {
 
   # fetch the versions to create the documentations
   fetchStyx = version:
-    import (fetchTarball "https://github.com/styx-static/styx/archive/${version}.tar.gz") {};
+    import (fetchTarball "https://github.com/divnix/styx/archive/${version}.tar.gz") {};
 
   # list of versions to generate documentation from
   versions = [
