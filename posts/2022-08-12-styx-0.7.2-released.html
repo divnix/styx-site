@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Styx 0.7.0 released - Styx Static Site Generator</title>
+<title>Styx 0.7.2 released - Styx Static Site Generator</title>
 <link href="https://divnix.github.io/styx-site/feed.xml" rel="alternate" type="application/atom+xml" />
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
@@ -37,9 +37,9 @@
 <div class="container">
   <article>
     <header class="article-header">
-      <h1>Styx 0.7.0 released</h1>
+      <h1>Styx 0.7.2 released</h1>
 
-      <time datetime="2017-09-02T00:00:00Z">2017-09-02</time>
+      <time datetime="2022-08-12T00:00:00Z">2022-08-12</time>
     </header>
     <div class="container">
     <div class="sect1">
@@ -48,117 +48,41 @@
 <div class="ulist">
 <ul>
 <li>
-<p>Styx use its own version without relying on global <code>&lt;nixpkgs&gt;</code>, this ensure that <code>site.nix</code> format, used styx-themes and styx versions are matching.</p>
+<p>Styx is now located and maintained at a new location: <a href="https://github.com/divnix/styx/">GitHub repository</a>.</p>
 </li>
 <li>
-<p>Instructions and helpers for <a href="#multilocale">multi-locale</a> sites.</p>
+<p>Might move back, once/if maintainer access can be obtained.</p>
 </li>
 <li>
-<p>Block feature for flexible single page websites, used in the Agency theme.</p>
-</li>
-<li>
-<p>Better support for Darwin platforms.</p>
+<p>Uses now niv to pin dependencies</p>
 </li>
 </ul>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_new_themes">New themes:</h2>
+<h2 id="_bug_fixes">Bug fixes:</h2>
 <div class="sectionbody">
 <div class="ulist">
 <ul>
 <li>
-<p>Nix</p>
+<p>caddy now is caddy2</p>
 </li>
 <li>
-<p>Ghostwriter</p>
+<p>caddy fails with <code>no bin</code>, removing the .bin fixes it</p>
+</li>
+<li>
+<p>proofreading</p>
+</li>
+<li>
+<p>Fixed <code>styx</code> command path resolution when styx was installed globally.</p>
 </li>
 </ul>
 </div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_new_commands">New commands:</h2>
-<div class="sectionbody">
-<div class="ulist">
-<ul>
-<li>
-<p><code>styx preview-theme</code>: Preview a styx-theme theme, eg: <code>styx preview-theme ghostwriter</code>.</p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_breaking_changes">Breaking Changes:</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p><code>site.nix</code> format have been simplified. Required arguments are <code>styx</code> and <code>extraConf</code> only.
-The themes set <code>styx-themes</code>, can be accessed with <code>import styx.themes</code> and is tied to the styx version.</p>
-</div>
-<div class="listingblock">
-<div class="title">Pre 0.7.0 site.nix</div>
-<div class="content">
-<pre class="highlight"><code class="language-nix" data-lang="nix">{ lib, styx, runCommand, writeText
-, styx-themes
-, extraConf ? {}
-}@args:
-
-rec {
-
-  /* Importing styx library
-  */
-  styxLib = import styx.lib args;</code></pre>
-</div>
-</div>
-<div class="listingblock">
-<div class="title">Post 0.7.0 site.nix</div>
-<div class="content">
-<pre class="highlight"><code class="language-nix" data-lang="nix">{ styx
-, extraConf ? {}
-}:
-
-rec {
-
-  /* Importing styx library
-  */
-  styxLib = import styx.lib styx;
-
-
-  /* Importing styx themes from styx
-  */
-  styx-themes = import styx.themes;</code></pre>
-</div>
-</div>
 <hr/>
 <div class="paragraph">
-<p>Thoughts:</p>
-</div>
-<div class="paragraph">
-<p>At the moment of writing, styx 0.7.0 is only available in the <code>nixpkgs-unstable</code> channel.
-If you are on a different channel and want to test / install styx 0.7.0, use the following command:</p>
-</div>
-<div class="paragraph">
-<p>Testing with nix-shell:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code>$ nix-shell -p styx -I nixpkgs=https://github.com/NixOS/nixpkgs-channels/archive/nixpkgs-unstable.tar.gz</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Installing:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code>$ nix-env -A styx -I nixpkgs=https://github.com/NixOS/nixpkgs-channels/archive/nixpkgs-unstable.tar.gz</code></pre>
-</div>
-</div>
-<hr/>
-<div class="paragraph">
-<p>Learn more in the <a href="https://divnix.github.io/styx-site/documentation/v0.7.0/index.html">Styx 0.7.0 Documentation</a>,
-<a href="https://divnix.github.io/styx-site/documentation/v0.7.0/index.html#v0.7.0">release notes</a>.</p>
+<p>Learn more in the <a href="https://divnix.github.io/styx-site/documentation/v0.7.2/index.html">Styx 0.7.2 Documentation</a>,
+<a href="https://divnix.github.io/styx-site/documentation/v0.7.2/index.html#v0.7.2">release notes</a>.</p>
 </div>
 <div class="paragraph">
 <p>Contribute to Styx via <a href="https://github.com/divnix/styx/">GitHub repository</a>.</p>
@@ -174,8 +98,8 @@ If you are on a different channel and want to test / install styx 0.7.0, use the
 
   <hr /><nav aria-label="...">
 <ul class="pager">
-<li class="previous"><a href="https://divnix.github.io/styx-site/posts/2022-08-12-styx-0.7.2-released.html"><span aria-hidden="true">&larr;</span> Styx 0.7.2 released</a></li>
-<li class="next"><a href="https://divnix.github.io/styx-site/posts/2017-02-28-styx-0.6.0-released.html">Styx 0.6.0 released <span aria-hidden="true">&rarr;</span></a></li>
+
+<li class="next"><a href="https://divnix.github.io/styx-site/posts/2017-09-02-styx-0.7.0-released.html">Styx 0.7.0 released <span aria-hidden="true">&rarr;</span></a></li>
 </ul>
 </nav>
 
