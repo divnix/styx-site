@@ -54,7 +54,7 @@ rec {
 
     doc = lib.fold (v: acc:
       acc // { "${v}" = mkDocPath v; }
-    ) {} versions;
+    ) {} (builtins.attrNames versions);
 
     navbar = [
       pages.news
@@ -149,20 +149,21 @@ rec {
   };
 
   # fetch the versions to create the documentations
-  fetchStyx = version:
-    import (fetchTarball "https://github.com/divnix/styx/archive/${version}.tar.gz") {};
+  fetchStyx = version: fetchTarball "https://github.com/divnix/styx/archive/${version}.tar.gz";
+  fetchNixpkgs = rev: fetchTarball "https://github.com/nixos/nixpkgs/archive/${rev}.tar.gz";
 
   # list of versions to generate documentation from
-  versions = [
-    "v0.7.0"
-    "v0.6.0"
-    "v0.5.0"
-    "v0.4.0"
-    "v0.3.1"
-    "v0.3.0"
-    "v0.2.0"
-    "v0.1.0"
-  ];
+  versions = {
+    "v0.7.2" = import (fetchStyx "v0.7.2") { pkgs = import (fetchNixpkgs "2c1838ab99b086dccad930e8dcc504b867149a0c") {};};
+    "v0.7.0" = import (fetchStyx "v0.7.0") { pkgs = import (fetchNixpkgs "2c1838ab99b086dccad930e8dcc504b867149a0c") {};};
+    "v0.6.0" = import (fetchStyx "v0.6.0") { pkgs = import (fetchNixpkgs "2c1838ab99b086dccad930e8dcc504b867149a0c") {};};
+    "v0.5.0" = import (fetchStyx "v0.5.0") { pkgs = import (fetchNixpkgs "2c1838ab99b086dccad930e8dcc504b867149a0c") {};};
+    "v0.4.0" = import (fetchStyx "v0.4.0") { pkgs = import (fetchNixpkgs "2c1838ab99b086dccad930e8dcc504b867149a0c") {};};
+    "v0.3.1" = import (fetchStyx "v0.3.1") { pkgs = import (fetchNixpkgs "2c1838ab99b086dccad930e8dcc504b867149a0c") {};};
+    "v0.3.0" = import (fetchStyx "v0.3.0") { pkgs = import (fetchNixpkgs "2c1838ab99b086dccad930e8dcc504b867149a0c") {};};
+    "v0.2.0" = import (fetchStyx "v0.2.0") { pkgs = import (fetchNixpkgs "2c1838ab99b086dccad930e8dcc504b867149a0c") {};};
+    "v0.1.0" = import (fetchStyx "v0.1.0") { pkgs = import (fetchNixpkgs "2c1838ab99b086dccad930e8dcc504b867149a0c") {};};
+  };
 
   substitutions = {
     siteUrl = conf.siteUrl;
@@ -184,11 +185,11 @@ rec {
       ) data.themes}
 
       # Manuals
-      ${lib.concatStringsSep "\n" (map (version: ''
+      ${lib.concatStringsSep "\n" (mapAttrsToList (version: package: ''
         mkdir -p $out/documentation/${version}/
-        cp -r ${fetchStyx version}/share/doc/styx/* $out${mkDocPath version}
+        cp -r ${package}/share/doc/styx/* $out/documentation/${version}/
       '') versions)}
-      cp -r ${fetchStyx (lib.head versions)}/share/doc/styx/* $out/documentation/
+      cp -r ${versions.${head (attrNames versions)}}/share/doc/styx/* $out/documentation/
     '';
   };
 
