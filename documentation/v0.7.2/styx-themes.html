@@ -424,7 +424,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="header">
 <h1>Styx-themes documentation</h1>
 <div class="details">
-<span id="revnumber">version 0.7.0</span>
+<span id="revnumber">version 0.7.2</span>
 </div>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
@@ -493,7 +493,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>This document contains automatically generated documentation for themes included in the <code>styx-themes</code> package set.</p>
 </div>
 <div class="paragraph">
-<p>It is generated with a <a href="https://github.com/styx-static/styx/blob/master/scripts/themes-doc.nix">nix expression</a> using each theme metadata and configuration interface.</p>
+<p>It is generated with a <a href="https://github.com/divnix/styx/blob/master/scripts/themes-doc.nix">nix expression</a> using each theme metadata and configuration interface.</p>
 </div>
 <div class="ulist">
 <ul>
@@ -527,10 +527,10 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="ulist">
 <ul>
 <li>
-<p><a href="https://styx-static.github.io/styx-theme-agency">Demo</a></p>
+<p><a href="https://divnix.github.io/styx-theme-agency">Demo</a></p>
 </li>
 <li>
-<p><a href="https://github.com/styx-static/styx-theme-agency">Homepage</a></p>
+<p><a href="https://github.com/divnix/styx-theme-agency">Homepage</a></p>
 </li>
 </ul>
 </div>
@@ -998,7 +998,7 @@ rec {
     in
       (mkBlockSet pages.index.blocks [ "services" "portfolio" "about" "team" "contact" ])
       ++ [
-        { title = "Styx"; url = "https://styx-static.github.io/styx-site/"; }
+        { title = "Styx"; url = "https://divnix.github.io/styx-site/"; }
       ];
 
   } // (lib.loadDir { dir = ./data; inherit env; asAttrs = true; });
@@ -1060,10 +1060,10 @@ rec {
 <div class="ulist">
 <ul>
 <li>
-<p><a href="https://styx-static.github.io/styx-theme-generic-templates">Demo</a></p>
+<p><a href="https://divnix.github.io/styx-theme-generic-templates">Demo</a></p>
 </li>
 <li>
-<p><a href="https://github.com/styx-static/styx-theme-generic-templates">Homepage</a></p>
+<p><a href="https://github.com/divnix/styx-theme-generic-templates">Homepage</a></p>
 </li>
 </ul>
 </div>
@@ -1240,7 +1240,7 @@ $ cp $(styx theme-path generic-templates)/templates/partials/content.nix themes/
 <tr>
 <td><i class="conum" data-value="3"></i><b>3</b></td>
 <td>Copy the generic-templates <code>templates/partials/content.nix</code> to the foo theme.<br>
-This code use the generic-templates bundled with styx, to use another version clone the <a href="https://github.com/styx-static/styx-theme-generic-templates">generic-templates repo</a>, select the desired version, and copy the file from there.</td>
+This code use the generic-templates bundled with styx, to use another version clone the <a href="https://github.com/divnix/styx-theme-generic-templates">generic-templates repo</a>, select the desired version, and copy the file from there.</td>
 </tr>
 </table>
 </div>
@@ -1360,7 +1360,7 @@ Every template of this theme use the <code>documentedTemplate</code> function th
 </dd>
 <dt class="hdlist1">Type</dt>
 <dd>
-<p>string</p>
+<p>Concatenated string</p>
 </dd>
 <dt class="hdlist1">Default</dt>
 <dd>
@@ -1416,7 +1416,7 @@ Every template of this theme use the <code>documentedTemplate</code> function th
 </dd>
 <dt class="hdlist1">Type</dt>
 <dd>
-<p>string</p>
+<p>Concatenated string</p>
 </dd>
 <dt class="hdlist1">Default</dt>
 <dd>
@@ -1536,7 +1536,7 @@ Every template of this theme use the <code>documentedTemplate</code> function th
 </dd>
 <dt class="hdlist1">Type</dt>
 <dd>
-<p>string</p>
+<p>Concatenated string</p>
 </dd>
 <dt class="hdlist1">Default</dt>
 <dd>
@@ -1568,7 +1568,7 @@ Every template of this theme use the <code>documentedTemplate</code> function th
 </dd>
 <dt class="hdlist1">Type</dt>
 <dd>
-<p>string</p>
+<p>Concatenated string</p>
 </dd>
 <dt class="hdlist1">Default</dt>
 <dd>
@@ -1624,7 +1624,7 @@ Every template of this theme use the <code>documentedTemplate</code> function th
 </dd>
 <dt class="hdlist1">Type</dt>
 <dd>
-<p>string</p>
+<p>Concatenated string</p>
 </dd>
 <dt class="hdlist1">Default</dt>
 <dd>
@@ -4345,10 +4345,10 @@ Use the <code>generic-templates</code> theme.</p>
 <div class="ulist">
 <ul>
 <li>
-<p><a href="https://styx-static.github.io/styx-theme-ghostwriter">Demo</a></p>
+<p><a href="https://divnix.github.io/styx-theme-ghostwriter">Demo</a></p>
 </li>
 <li>
-<p><a href="https://github.com/styx-static/styx-theme-ghostwriter">Homepage</a></p>
+<p><a href="https://github.com/divnix/styx-theme-ghostwriter">Homepage</a></p>
 </li>
 </ul>
 </div>
@@ -4469,7 +4469,7 @@ author = authors.john;
 </dd>
 <dt class="hdlist1">Type</dt>
 <dd>
-<p>integer</p>
+<p>signed integer</p>
 </dd>
 <dt class="hdlist1">Default</dt>
 <dd>
@@ -4615,7 +4615,7 @@ author = authors.john;
 </dd>
 <dt class="hdlist1">Type</dt>
 <dd>
-<p>null or string</p>
+<p>null or Concatenated string</p>
 </dd>
 <dt class="hdlist1">Default</dt>
 <dd>
@@ -4639,7 +4639,7 @@ author = authors.john;
 </dd>
 <dt class="hdlist1">Type</dt>
 <dd>
-<p>null or string</p>
+<p>null or Concatenated string</p>
 </dd>
 <dt class="hdlist1">Default</dt>
 <dd>
@@ -4663,7 +4663,7 @@ author = authors.john;
 </dd>
 <dt class="hdlist1">Type</dt>
 <dd>
-<p>null or string</p>
+<p>null or Concatenated string</p>
 </dd>
 <dt class="hdlist1">Default</dt>
 <dd>
@@ -4687,7 +4687,7 @@ author = authors.john;
 </dd>
 <dt class="hdlist1">Type</dt>
 <dd>
-<p>null or string</p>
+<p>null or Concatenated string</p>
 </dd>
 <dt class="hdlist1">Default</dt>
 <dd>
@@ -4711,7 +4711,7 @@ author = authors.john;
 </dd>
 <dt class="hdlist1">Type</dt>
 <dd>
-<p>null or string</p>
+<p>null or Concatenated string</p>
 </dd>
 <dt class="hdlist1">Default</dt>
 <dd>
@@ -4735,7 +4735,7 @@ author = authors.john;
 </dd>
 <dt class="hdlist1">Type</dt>
 <dd>
-<p>null or string</p>
+<p>null or Concatenated string</p>
 </dd>
 <dt class="hdlist1">Default</dt>
 <dd>
@@ -4759,7 +4759,7 @@ author = authors.john;
 </dd>
 <dt class="hdlist1">Type</dt>
 <dd>
-<p>null or string</p>
+<p>null or Concatenated string</p>
 </dd>
 <dt class="hdlist1">Default</dt>
 <dd>
@@ -4972,10 +4972,10 @@ Requires the <code>generic-templates</code> theme.</p>
 <div class="ulist">
 <ul>
 <li>
-<p><a href="https://styx-static.github.io/styx-theme-hyde">Demo</a></p>
+<p><a href="https://divnix.github.io/styx-theme-hyde">Demo</a></p>
 </li>
 <li>
-<p><a href="https://github.com/styx-static/styx-theme-hyde">Homepage</a></p>
+<p><a href="https://github.com/divnix/styx-theme-hyde">Homepage</a></p>
 </li>
 </ul>
 </div>
@@ -5022,7 +5022,7 @@ Requires the <code>generic-templates</code> theme.</p>
 </dd>
 <dt class="hdlist1">Type</dt>
 <dd>
-<p>integer</p>
+<p>signed integer</p>
 </dd>
 <dt class="hdlist1">Default</dt>
 <dd>
@@ -5342,10 +5342,10 @@ Requires the <code>generic-templates</code> theme.</p>
 <div class="ulist">
 <ul>
 <li>
-<p><a href="https://styx-static.github.io/styx-theme-nix">Demo</a></p>
+<p><a href="https://divnix.github.io/styx-theme-nix">Demo</a></p>
 </li>
 <li>
-<p><a href="https://github.com/styx-static/styx-theme-nix">Homepage</a></p>
+<p><a href="https://github.com/divnix/styx-theme-nix">Homepage</a></p>
 </li>
 </ul>
 </div>
@@ -5703,10 +5703,10 @@ rec {
 <div class="ulist">
 <ul>
 <li>
-<p><a href="https://styx-static.github.io/styx-theme-orbit">Demo</a></p>
+<p><a href="https://divnix.github.io/styx-theme-orbit">Demo</a></p>
 </li>
 <li>
-<p><a href="https://github.com/styx-static/styx-theme-orbit">Homepage</a></p>
+<p><a href="https://github.com/divnix/styx-theme-orbit">Homepage</a></p>
 </li>
 </ul>
 </div>
@@ -5749,8 +5749,7 @@ rec {
 <dl>
 <dt class="hdlist1">Description</dt>
 <dd>
-<p>List of contact link as attribute sets, requires <code>type</code>, <code>icon</code>, <code>url</code> and <code>title</code>.
-If set to the empty list <code>[]</code>, the skills area will not be displayed.</p>
+<p>List of contact link as attribute sets, requires <code>type</code>, <code>icon</code>, <code>url</code> and <code>title</code>.</p>
 </dd>
 <dt class="hdlist1">Type</dt>
 <dd>
@@ -5811,8 +5810,7 @@ If set to the empty list <code>[]</code>, the skills area will not be displayed.
 <dl>
 <dt class="hdlist1">Description</dt>
 <dd>
-<p>List of education items as attribute sets, requires <code>degree</code>, <code>college</code> and <code>dates</code>.
-If set to the empty list <code>[]</code>, the education area will not be displayed.</p>
+<p>List of education items as attribute sets, requires <code>degree</code>, <code>college</code> and <code>dates</code>.</p>
 </dd>
 <dt class="hdlist1">Type</dt>
 <dd>
@@ -5896,8 +5894,7 @@ If set to the empty list <code>[]</code>, the education area will not be display
 <dl>
 <dt class="hdlist1">Description</dt>
 <dd>
-<p>List of experiences as attribute sets, requires <code>position</code>, <code>dates</code>, <code>company</code> and <code>content</code>.
-If set to the empty list <code>[]</code>, the experiences area will not be displayed.</p>
+<p>List of experiences as attribute sets, requires <code>position</code>, <code>dates</code>, <code>company</code> and <code>content</code>.</p>
 </dd>
 <dt class="hdlist1">Type</dt>
 <dd>
@@ -5958,7 +5955,7 @@ If set to the empty list <code>[]</code>, the experiences area will not be displ
 <dl>
 <dt class="hdlist1">Description</dt>
 <dd>
-<p>List of interests. If set to the empty list <code>[]</code>, the interests area will not be displayed.</p>
+<p>List of interests.</p>
 </dd>
 <dt class="hdlist1">Type</dt>
 <dd>
@@ -6014,8 +6011,7 @@ If set to the empty list <code>[]</code>, the experiences area will not be displ
 <dl>
 <dt class="hdlist1">Description</dt>
 <dd>
-<p>List of languages as attribute sets, requires <code>language</code>, and <code>level</code>.
-If set to the empty list <code>[]</code>, the languages area will not be displayed.</p>
+<p>List of languages as attribute sets, requires <code>language</code>, and <code>level</code>.</p>
 </dd>
 <dt class="hdlist1">Type</dt>
 <dd>
@@ -6069,6 +6065,70 @@ If set to the empty list <code>[]</code>, the languages area will not be display
 <hr>
 </div>
 <div class="sect3">
+<h4 id="theme.lib.bootstrap.enable"><a class="anchor" href="#theme.lib.bootstrap.enable"></a>theme.lib.bootstrap.enable</h4>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Default</dt>
+<dd>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-nix" data-lang="nix">true</code></pre>
+</div>
+</div>
+</dd>
+</dl>
+</div>
+<hr>
+</div>
+<div class="sect3">
+<h4 id="theme.lib.font-awesome.enable"><a class="anchor" href="#theme.lib.font-awesome.enable"></a>theme.lib.font-awesome.enable</h4>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Default</dt>
+<dd>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-nix" data-lang="nix">true</code></pre>
+</div>
+</div>
+</dd>
+</dl>
+</div>
+<hr>
+</div>
+<div class="sect3">
+<h4 id="theme.lib.googlefonts"><a class="anchor" href="#theme.lib.googlefonts"></a>theme.lib.googlefonts</h4>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Default</dt>
+<dd>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-nix" data-lang="nix">[ "Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic" ]</code></pre>
+</div>
+</div>
+</dd>
+</dl>
+</div>
+<hr>
+</div>
+<div class="sect3">
+<h4 id="theme.lib.jquery.enable"><a class="anchor" href="#theme.lib.jquery.enable"></a>theme.lib.jquery.enable</h4>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Default</dt>
+<dd>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-nix" data-lang="nix">true</code></pre>
+</div>
+</div>
+</dd>
+</dl>
+</div>
+<hr>
+</div>
+<div class="sect3">
 <h4 id="theme.profile"><a class="anchor" href="#theme.profile"></a>theme.profile</h4>
 <div class="dlist">
 <dl>
@@ -6085,7 +6145,7 @@ If set to the empty list <code>[]</code>, the languages area will not be display
 <div class="listingblock">
 <div class="content">
 <pre class="highlightjs highlight"><code class="language-nix" data-lang="nix">{
-  image = "profile.png";
+  image = "/assets/images/profile.png";
   name = "John Doe";
   tagline = "Full Stack Developer";
 }</code></pre>
@@ -6126,8 +6186,7 @@ If set to the empty list <code>[]</code>, the languages area will not be display
 <dl>
 <dt class="hdlist1">Description</dt>
 <dd>
-<p>List of projects as attribute sets, requires <code>title</code>, <code>url</code> and <code>content</code>.
-If set to the empty list <code>[]</code>, the projects area will not be displayed.</p>
+<p>List of projects as attribute sets, requires <code>title</code>, <code>url</code> and <code>content</code>.</p>
 </dd>
 <dt class="hdlist1">Type</dt>
 <dd>
@@ -6283,8 +6342,7 @@ If set to the empty list <code>[]</code>, the projects area will not be displaye
 <dl>
 <dt class="hdlist1">Description</dt>
 <dd>
-<p>List of skills as attribute sets, requires <code>title</code> and <code>level</code>.
-If set to the empty list <code>[]</code>, the skills area will not be displayed.</p>
+<p>List of skills as attribute sets, requires <code>title</code> and <code>level</code>.</p>
 </dd>
 <dt class="hdlist1">Type</dt>
 <dd>
@@ -6346,8 +6404,7 @@ If set to the empty list <code>[]</code>, the skills area will not be displayed.
 <dl>
 <dt class="hdlist1">Description</dt>
 <dd>
-<p>content of the profile area as HTML text.
-if set to <code>null</code>, the summary area will not be displayed.</p>
+<p>content of the profile area as HTML text.</p>
 </dd>
 <dt class="hdlist1">Type</dt>
 <dd>
@@ -6418,63 +6475,63 @@ if set to <code>null</code>, the summary area will not be displayed.</p>
 <h3 id="orbit.templates"><a class="anchor" href="#orbit.templates"></a>6.2. Templates</h3>
 <hr>
 <div class="sect3">
-<h4 id="templates.icon.fa"><a class="anchor" href="#templates.icon.fa"></a>templates.icon.fa</h4>
+<h4 id="templates.blocks.contact"><a class="anchor" href="#templates.blocks.contact"></a>templates.blocks.contact</h4>
 <hr>
 </div>
 <div class="sect3">
-<h4 id="templates.index"><a class="anchor" href="#templates.index"></a>templates.index</h4>
+<h4 id="templates.blocks.education"><a class="anchor" href="#templates.blocks.education"></a>templates.blocks.education</h4>
 <hr>
 </div>
 <div class="sect3">
-<h4 id="templates.partials.contact"><a class="anchor" href="#templates.partials.contact"></a>templates.partials.contact</h4>
+<h4 id="templates.blocks.experiences"><a class="anchor" href="#templates.blocks.experiences"></a>templates.blocks.experiences</h4>
 <hr>
 </div>
 <div class="sect3">
-<h4 id="templates.partials.education"><a class="anchor" href="#templates.partials.education"></a>templates.partials.education</h4>
+<h4 id="templates.blocks.interests"><a class="anchor" href="#templates.blocks.interests"></a>templates.blocks.interests</h4>
 <hr>
 </div>
 <div class="sect3">
-<h4 id="templates.partials.experiences"><a class="anchor" href="#templates.partials.experiences"></a>templates.partials.experiences</h4>
+<h4 id="templates.blocks.languages"><a class="anchor" href="#templates.blocks.languages"></a>templates.blocks.languages</h4>
 <hr>
 </div>
 <div class="sect3">
-<h4 id="templates.partials.footer"><a class="anchor" href="#templates.partials.footer"></a>templates.partials.footer</h4>
+<h4 id="templates.blocks.profile"><a class="anchor" href="#templates.blocks.profile"></a>templates.blocks.profile</h4>
 <hr>
 </div>
 <div class="sect3">
-<h4 id="templates.partials.head"><a class="anchor" href="#templates.partials.head"></a>templates.partials.head</h4>
+<h4 id="templates.blocks.projects"><a class="anchor" href="#templates.blocks.projects"></a>templates.blocks.projects</h4>
 <hr>
 </div>
 <div class="sect3">
-<h4 id="templates.partials.interests"><a class="anchor" href="#templates.partials.interests"></a>templates.partials.interests</h4>
+<h4 id="templates.blocks.skills"><a class="anchor" href="#templates.blocks.skills"></a>templates.blocks.skills</h4>
 <hr>
 </div>
 <div class="sect3">
-<h4 id="templates.partials.js"><a class="anchor" href="#templates.partials.js"></a>templates.partials.js</h4>
+<h4 id="templates.blocks.summary"><a class="anchor" href="#templates.blocks.summary"></a>templates.blocks.summary</h4>
 <hr>
 </div>
 <div class="sect3">
-<h4 id="templates.partials.languages"><a class="anchor" href="#templates.partials.languages"></a>templates.partials.languages</h4>
+<h4 id="templates.partials.content-post"><a class="anchor" href="#templates.partials.content-post"></a>templates.partials.content-post</h4>
 <hr>
 </div>
 <div class="sect3">
-<h4 id="templates.partials.profile"><a class="anchor" href="#templates.partials.profile"></a>templates.partials.profile</h4>
+<h4 id="templates.partials.content-pre"><a class="anchor" href="#templates.partials.content-pre"></a>templates.partials.content-pre</h4>
 <hr>
 </div>
 <div class="sect3">
-<h4 id="templates.partials.projects"><a class="anchor" href="#templates.partials.projects"></a>templates.partials.projects</h4>
+<h4 id="templates.partials.head.css-custom"><a class="anchor" href="#templates.partials.head.css-custom"></a>templates.partials.head.css-custom</h4>
+<hr>
+</div>
+<div class="sect3">
+<h4 id="templates.partials.head.meta"><a class="anchor" href="#templates.partials.head.meta"></a>templates.partials.head.meta</h4>
+<hr>
+</div>
+<div class="sect3">
+<h4 id="templates.partials.js-custom"><a class="anchor" href="#templates.partials.js-custom"></a>templates.partials.js-custom</h4>
 <hr>
 </div>
 <div class="sect3">
 <h4 id="templates.partials.sidebar"><a class="anchor" href="#templates.partials.sidebar"></a>templates.partials.sidebar</h4>
-<hr>
-</div>
-<div class="sect3">
-<h4 id="templates.partials.skills"><a class="anchor" href="#templates.partials.skills"></a>templates.partials.skills</h4>
-<hr>
-</div>
-<div class="sect3">
-<h4 id="templates.partials.summary"><a class="anchor" href="#templates.partials.summary"></a>templates.partials.summary</h4>
 <hr>
 </div>
 </div>
@@ -6511,6 +6568,7 @@ rec {
      items at the end of the list have higher priority
   */
   themes = [
+    styx-themes.generic-templates
     ../.
   ];
 
@@ -6545,9 +6603,23 @@ rec {
 
   pages = {
     index = {
+      title    = "Home";
       path     = "/index.html";
-      template = templates.index;
-      layout   = lib.id;
+      template = templates.block-page.full;
+      layout   = templates.layout;
+      blocks   = [
+        (templates.blocks.summary conf.theme.summary)
+        (templates.blocks.experiences conf.theme.experiences)
+        (templates.blocks.projects conf.theme.projects)
+        (templates.blocks.skills conf.theme.skills)
+      ];
+      sidebar-blocks = [
+        (templates.blocks.profile conf.theme.profile)
+        (templates.blocks.contact conf.theme.contact)
+        (templates.blocks.education conf.theme.education)
+        (templates.blocks.languages conf.theme.languages)
+        (templates.blocks.interests conf.theme.interests)
+      ];
     };
   };
 
@@ -6604,10 +6676,10 @@ This theme example site includes:</p>
 <div class="ulist">
 <ul>
 <li>
-<p><a href="https://styx-static.github.io/styx-theme-showcase">Demo</a></p>
+<p><a href="https://divnix.github.io/styx-theme-showcase">Demo</a></p>
 </li>
 <li>
-<p><a href="https://github.com/styx-static/styx-theme-showcase">Homepage</a></p>
+<p><a href="https://github.com/divnix/styx-theme-showcase">Homepage</a></p>
 </li>
 </ul>
 </div>
@@ -6630,7 +6702,7 @@ This theme example site includes:</p>
 </dd>
 <dt class="hdlist1">Type</dt>
 <dd>
-<p>integer</p>
+<p>signed integer</p>
 </dd>
 <dt class="hdlist1">Default</dt>
 <dd>
@@ -6654,7 +6726,7 @@ This theme example site includes:</p>
 </dd>
 <dt class="hdlist1">Type</dt>
 <dd>
-<p>integer</p>
+<p>signed integer</p>
 </dd>
 <dt class="hdlist1">Default</dt>
 <dd>
@@ -6678,7 +6750,7 @@ This theme example site includes:</p>
 </dd>
 <dt class="hdlist1">Type</dt>
 <dd>
-<p>string</p>
+<p>Concatenated string</p>
 </dd>
 <dt class="hdlist1">Default</dt>
 <dd>
@@ -6702,7 +6774,7 @@ This theme example site includes:</p>
 </dd>
 <dt class="hdlist1">Type</dt>
 <dd>
-<p>string</p>
+<p>Concatenated string</p>
 </dd>
 <dt class="hdlist1">Default</dt>
 <dd>
@@ -6842,7 +6914,7 @@ rec {
       pages.about
       (head pages.postsArchive)
       (pages.feed // { navbarTitle = "RSS"; })
-      { title = "Styx"; url = "https://styx-static.github.io/styx-site/"; }
+      { title = "Styx"; url = "https://divnix.github.io/styx-site/"; }
     ];
 
     # posts taxonomies

@@ -4,9 +4,9 @@
   
   <generator>Styx</generator>
   <updated>2017-09-02T00:00:00Z</updated>
-  <id>https://styx-static.github.io/styx-site/feed.xml</id>
-  <link href="https://styx-static.github.io/styx-site/feed.xml" rel="self" type="application/atom+xml"/>
-  <link href="https://styx-static.github.io/styx-site/" rel="alternate"/>
+  <id>https://divnix.github.io/styx-site/feed.xml</id>
+  <link href="https://divnix.github.io/styx-site/feed.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://divnix.github.io/styx-site/" rel="alternate"/>
   <author>
   <name>Styx</name>
 </author>
@@ -14,10 +14,10 @@
   
   
   <entry>
-  <id>https://styx-static.github.io/styx-site/posts/2017-09-02-styx-0.7.0-released.html</id>
+  <id>https://divnix.github.io/styx-site/posts/2017-09-02-styx-0.7.0-released.html</id>
   <title>Styx 0.7.0 released</title>
   <updated>2017-09-02T00:00:00Z</updated>
-  <link href="https://styx-static.github.io/styx-site/posts/2017-09-02-styx-0.7.0-released.html" rel="alternate" type="text/html"/>
+  <link href="https://divnix.github.io/styx-site/posts/2017-09-02-styx-0.7.0-released.html" rel="alternate" type="text/html"/>
   
   <content type="xhtml">
       <div xmlns="http://www.w3.org/1999/xhtml">
@@ -136,14 +136,14 @@ If you are on a different channel and want to test / install styx 0.7.0, use the
 </div>
 <hr/>
 <div class="paragraph">
-<p>Learn more in the <a href="https://styx-static.github.io/styx-site/documentation/v0.7.0/index.html">Styx 0.7.0 Documentation</a>,
-<a href="https://styx-static.github.io/styx-site/documentation/v0.7.0/index.html#v0.7.0">release notes</a>.</p>
+<p>Learn more in the <a href="https://divnix.github.io/styx-site/documentation/v0.7.0/index.html">Styx 0.7.0 Documentation</a>,
+<a href="https://divnix.github.io/styx-site/documentation/v0.7.0/index.html#v0.7.0">release notes</a>.</p>
 </div>
 <div class="paragraph">
-<p>Contribute to Styx via <a href="https://github.com/styx-static/styx/">GitHub repository</a>.</p>
+<p>Contribute to Styx via <a href="https://github.com/divnix/styx/">GitHub repository</a>.</p>
 </div>
 <div class="paragraph">
-<p>Problems and bugs should be reported to the <a href="https://github.com/styx-static/styx/issues">issue tracker</a>.</p>
+<p>Problems and bugs should be reported to the <a href="https://github.com/divnix/styx/issues">issue tracker</a>.</p>
 </div>
 </div>
 </div>
@@ -153,10 +153,10 @@ If you are on a different channel and want to test / install styx 0.7.0, use the
 </entry>
 
 <entry>
-  <id>https://styx-static.github.io/styx-site/posts/2017-02-28-styx-0.6.0-released.html</id>
+  <id>https://divnix.github.io/styx-site/posts/2017-02-28-styx-0.6.0-released.html</id>
   <title>Styx 0.6.0 released</title>
   <updated>2017-02-28T00:00:00Z</updated>
-  <link href="https://styx-static.github.io/styx-site/posts/2017-02-28-styx-0.6.0-released.html" rel="alternate" type="text/html"/>
+  <link href="https://divnix.github.io/styx-site/posts/2017-02-28-styx-0.6.0-released.html" rel="alternate" type="text/html"/>
   
   <content type="xhtml">
       <div xmlns="http://www.w3.org/1999/xhtml">
@@ -301,14 +301,14 @@ For these commands <code>-I nixpkgs=&#8230;&#8203;</code> can also be used to se
 </div>
 <hr/>
 <div class="paragraph">
-<p>Learn more in the <a href="https://styx-static.github.io/styx-site/documentation/v0.6.0/index.html">Styx 0.6.0 Documentation</a>,
-<a href="https://styx-static.github.io/styx-site/documentation/v0.6.0/index.html#v0.6.0">release notes</a>.</p>
+<p>Learn more in the <a href="https://divnix.github.io/styx-site/documentation/v0.6.0/index.html">Styx 0.6.0 Documentation</a>,
+<a href="https://divnix.github.io/styx-site/documentation/v0.6.0/index.html#v0.6.0">release notes</a>.</p>
 </div>
 <div class="paragraph">
-<p>Contribute to Styx via <a href="https://github.com/styx-static/styx/">GitHub repository</a>.</p>
+<p>Contribute to Styx via <a href="https://github.com/divnix/styx/">GitHub repository</a>.</p>
 </div>
 <div class="paragraph">
-<p>Problems and bugs should be reported to the <a href="https://github.com/styx-static/styx/issues">issue tracker</a>.</p>
+<p>Problems and bugs should be reported to the <a href="https://github.com/divnix/styx/issues">issue tracker</a>.</p>
 </div>
 </div>
 </div>
@@ -318,10 +318,10 @@ For these commands <code>-I nixpkgs=&#8230;&#8203;</code> can also be used to se
 </entry>
 
 <entry>
-  <id>https://styx-static.github.io/styx-site/posts/2017-01-19-styx-0.5.0-released.html</id>
+  <id>https://divnix.github.io/styx-site/posts/2017-01-19-styx-0.5.0-released.html</id>
   <title>Styx 0.5.0 released</title>
   <updated>2017-01-19T00:00:00Z</updated>
-  <link href="https://styx-static.github.io/styx-site/posts/2017-01-19-styx-0.5.0-released.html" rel="alternate" type="text/html"/>
+  <link href="https://divnix.github.io/styx-site/posts/2017-01-19-styx-0.5.0-released.html" rel="alternate" type="text/html"/>
   
   <content type="xhtml">
       <div xmlns="http://www.w3.org/1999/xhtml">
@@ -380,22 +380,22 @@ For these commands <code>-I nixpkgs=...</code> can also be used to set the versi
 
 <hr />
 
-<p>Learn more in the <a href="https://styx-static.github.io/styx-site/documentation/v0.5.0/index.html">Styx 0.5.0 Documentation</a>,
-<a href="https://styx-static.github.io/styx-site/documentation/v0.5.0/index.html#v0.5.0">release notes</a>.</p>
+<p>Learn more in the <a href="https://divnix.github.io/styx-site/documentation/v0.5.0/index.html">Styx 0.5.0 Documentation</a>,
+<a href="https://divnix.github.io/styx-site/documentation/v0.5.0/index.html#v0.5.0">release notes</a>.</p>
 
-<p>Contribute to Styx via <a href="https://github.com/styx-static/styx/">GitHub repository</a>.</p>
+<p>Contribute to Styx via <a href="https://github.com/divnix/styx/">GitHub repository</a>.</p>
 
-<p>Problems and bugs should be reported to the <a href="https://github.com/styx-static/styx/issues">issue tracker</a>.</p>
+<p>Problems and bugs should be reported to the <a href="https://github.com/divnix/styx/issues">issue tracker</a>.</p>
 
       </div>
     </content>
 </entry>
 
 <entry>
-  <id>https://styx-static.github.io/styx-site/posts/2016-12-07-styx-0.4.0-released.html</id>
+  <id>https://divnix.github.io/styx-site/posts/2016-12-07-styx-0.4.0-released.html</id>
   <title>Styx 0.4.0 released</title>
   <updated>2016-12-07T00:00:00Z</updated>
-  <link href="https://styx-static.github.io/styx-site/posts/2016-12-07-styx-0.4.0-released.html" rel="alternate" type="text/html"/>
+  <link href="https://divnix.github.io/styx-site/posts/2016-12-07-styx-0.4.0-released.html" rel="alternate" type="text/html"/>
   
   <content type="xhtml">
       <div xmlns="http://www.w3.org/1999/xhtml">
@@ -414,22 +414,22 @@ For these commands <code>-I nixpkgs=...</code> can also be used to set the versi
 <li><code>site.nix</code> init section was refactored</li>
 </ul>
 
-<p>Learn more in the <a href="https://styx-static.github.io/styx-site/documentation/v0.4.0/index.html">Styx 0.4.0 Documentation</a>,
-<a href="https://styx-static.github.io/styx-site/documentation/v0.4.0/index.html#_release_notes">release notes</a>.</p>
+<p>Learn more in the <a href="https://divnix.github.io/styx-site/documentation/v0.4.0/index.html">Styx 0.4.0 Documentation</a>,
+<a href="https://divnix.github.io/styx-site/documentation/v0.4.0/index.html#_release_notes">release notes</a>.</p>
 
-<p>Contribute to Styx via <a href="https://github.com/styx-static/styx/">GitHub repository</a>.</p>
+<p>Contribute to Styx via <a href="https://github.com/divnix/styx/">GitHub repository</a>.</p>
 
-<p>Problems and bugs should be reported to the <a href="https://github.com/styx-static/styx/issues">issue tracker</a>.</p>
+<p>Problems and bugs should be reported to the <a href="https://github.com/divnix/styx/issues">issue tracker</a>.</p>
 
       </div>
     </content>
 </entry>
 
 <entry>
-  <id>https://styx-static.github.io/styx-site/posts/2016-10-29-styx-0.3.1-released.html</id>
+  <id>https://divnix.github.io/styx-site/posts/2016-10-29-styx-0.3.1-released.html</id>
   <title>Styx 0.3.1 released</title>
   <updated>2016-10-29T00:00:00Z</updated>
-  <link href="https://styx-static.github.io/styx-site/posts/2016-10-29-styx-0.3.1-released.html" rel="alternate" type="text/html"/>
+  <link href="https://divnix.github.io/styx-site/posts/2016-10-29-styx-0.3.1-released.html" rel="alternate" type="text/html"/>
   
   <content type="xhtml">
       <div xmlns="http://www.w3.org/1999/xhtml">
@@ -440,22 +440,22 @@ For these commands <code>-I nixpkgs=...</code> can also be used to set the versi
 <li><code>styx --help</code> fix</li>
 </ul>
 
-<p>Learn more in the <a href="https://styx-static.github.io/styx-site/documentation/v0.3.1/index.html">Styx 0.3.1 Documentation</a>,
-<a href="https://styx-static.github.io/styx-site/documentation/v0.3.1/index.html#_release_notes">release notes</a>.</p>
+<p>Learn more in the <a href="https://divnix.github.io/styx-site/documentation/v0.3.1/index.html">Styx 0.3.1 Documentation</a>,
+<a href="https://divnix.github.io/styx-site/documentation/v0.3.1/index.html#_release_notes">release notes</a>.</p>
 
-<p>Contribute to Styx via <a href="https://github.com/styx-static/styx/">GitHub repository</a>.</p>
+<p>Contribute to Styx via <a href="https://github.com/divnix/styx/">GitHub repository</a>.</p>
 
-<p>Problems and bugs should be reported to the <a href="https://github.com/styx-static/styx/issues">issue tracker</a>.</p>
+<p>Problems and bugs should be reported to the <a href="https://github.com/divnix/styx/issues">issue tracker</a>.</p>
 
       </div>
     </content>
 </entry>
 
 <entry>
-  <id>https://styx-static.github.io/styx-site/posts/2016-10-26-styx-0.3.0-released.html</id>
+  <id>https://divnix.github.io/styx-site/posts/2016-10-26-styx-0.3.0-released.html</id>
   <title>Styx 0.3.0 released</title>
   <updated>2016-10-26T00:00:00Z</updated>
-  <link href="https://styx-static.github.io/styx-site/posts/2016-10-26-styx-0.3.0-released.html" rel="alternate" type="text/html"/>
+  <link href="https://divnix.github.io/styx-site/posts/2016-10-26-styx-0.3.0-released.html" rel="alternate" type="text/html"/>
   
   <content type="xhtml">
       <div xmlns="http://www.w3.org/1999/xhtml">
@@ -472,22 +472,22 @@ For these commands <code>-I nixpkgs=...</code> can also be used to set the versi
 <li>Easier updates</li>
 </ul>
 
-<p>Learn more in the <a href="https://styx-static.github.io/styx-site/documentation/v0.3.0/index.html">Styx 0.3.0 Documentation</a>,
-<a href="https://styx-static.github.io/styx-site/documentation/v0.3.0/index.html#_release_notes">release notes</a>.</p>
+<p>Learn more in the <a href="https://divnix.github.io/styx-site/documentation/v0.3.0/index.html">Styx 0.3.0 Documentation</a>,
+<a href="https://divnix.github.io/styx-site/documentation/v0.3.0/index.html#_release_notes">release notes</a>.</p>
 
-<p>Contribute to Styx via <a href="https://github.com/styx-static/styx/">GitHub repository</a>.</p>
+<p>Contribute to Styx via <a href="https://github.com/divnix/styx/">GitHub repository</a>.</p>
 
-<p>Problems and bugs should be reported to the <a href="https://github.com/styx-static/styx/issues">issue tracker</a>.</p>
+<p>Problems and bugs should be reported to the <a href="https://github.com/divnix/styx/issues">issue tracker</a>.</p>
 
       </div>
     </content>
 </entry>
 
 <entry>
-  <id>https://styx-static.github.io/styx-site/posts/2016-10-10-styx-0.2.0-released.html</id>
+  <id>https://divnix.github.io/styx-site/posts/2016-10-10-styx-0.2.0-released.html</id>
   <title>Styx 0.2.0 released</title>
   <updated>2016-10-10T00:00:00Z</updated>
-  <link href="https://styx-static.github.io/styx-site/posts/2016-10-10-styx-0.2.0-released.html" rel="alternate" type="text/html"/>
+  <link href="https://divnix.github.io/styx-site/posts/2016-10-10-styx-0.2.0-released.html" rel="alternate" type="text/html"/>
   
   <content type="xhtml">
       <div xmlns="http://www.w3.org/1999/xhtml">
@@ -500,22 +500,22 @@ For these commands <code>-I nixpkgs=...</code> can also be used to set the versi
 <li>Themes</li>
 </ul>
 
-<p>Learn more in the <a href="https://styx-static.github.io/styx-site/documentation/v0.2.0/index.html">Styx 0.2.0 Documentation</a>,
-<a href="https://styx-static.github.io/styx-site/documentation/v0.2.0/index.html#_release_notes">release notes</a>.</p>
+<p>Learn more in the <a href="https://divnix.github.io/styx-site/documentation/v0.2.0/index.html">Styx 0.2.0 Documentation</a>,
+<a href="https://divnix.github.io/styx-site/documentation/v0.2.0/index.html#_release_notes">release notes</a>.</p>
 
-<p>Contribute to Styx via <a href="https://github.com/styx-static/styx/">GitHub repository</a>.</p>
+<p>Contribute to Styx via <a href="https://github.com/divnix/styx/">GitHub repository</a>.</p>
 
-<p>Problems and bugs should be reported to the <a href="https://github.com/styx-static/styx/issues">issue tracker</a>.</p>
+<p>Problems and bugs should be reported to the <a href="https://github.com/divnix/styx/issues">issue tracker</a>.</p>
 
       </div>
     </content>
 </entry>
 
 <entry>
-  <id>https://styx-static.github.io/styx-site/posts/2016-10-07-styx-0.1.0-released.html</id>
+  <id>https://divnix.github.io/styx-site/posts/2016-10-07-styx-0.1.0-released.html</id>
   <title>Styx 0.1.0 released</title>
   <updated>2016-10-07T00:00:00Z</updated>
-  <link href="https://styx-static.github.io/styx-site/posts/2016-10-07-styx-0.1.0-released.html" rel="alternate" type="text/html"/>
+  <link href="https://divnix.github.io/styx-site/posts/2016-10-07-styx-0.1.0-released.html" rel="alternate" type="text/html"/>
   
   <content type="xhtml">
       <div xmlns="http://www.w3.org/1999/xhtml">
@@ -535,12 +535,12 @@ $ styx --help
 $ styx --help
 </code></pre>
 
-<p>Learn more in the <a href="https://styx-static.github.io/styx-site/documentation/v0.1.0/index.html">Styx 0.1.0 Documentation</a>,
-<a href="https://styx-static.github.io/styx-site/documentation/v0.1.0/index.html#_release_notes">release notes</a>.</p>
+<p>Learn more in the <a href="https://divnix.github.io/styx-site/documentation/v0.1.0/index.html">Styx 0.1.0 Documentation</a>,
+<a href="https://divnix.github.io/styx-site/documentation/v0.1.0/index.html#_release_notes">release notes</a>.</p>
 
-<p>If you want to contribute to Styx, please join the <a href="https://github.com/styx-static/styx/">GitHub repository</a>.</p>
+<p>If you want to contribute to Styx, please join the <a href="https://github.com/divnix/styx/">GitHub repository</a>.</p>
 
-<p>Bugs should be reported to the <a href="https://github.com/styx-static/styx/issues">issue tracker</a>.</p>
+<p>Bugs should be reported to the <a href="https://github.com/divnix/styx/issues">issue tracker</a>.</p>
 
       </div>
     </content>
